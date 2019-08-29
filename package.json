@@ -1,13 +1,12 @@
 {
-
   "proxy": "http://localhost:3001",
-
   "name": "reactnode",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
     "react-scripts": "3.1.1"
   },
   "scripts": {
@@ -17,7 +16,6 @@
     "eject": "react-scripts eject",
     "server": "node-env-run server --exec nodemon | pino-colada",
     "dev": "run-p server start"
-
   },
   "eslintConfig": {
     "extends": "react-app"

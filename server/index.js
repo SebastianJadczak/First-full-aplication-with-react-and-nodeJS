@@ -1,12 +1,17 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const pino = require('express-pino-logger')();
+const path = require('path');
+const PageServer = require('../routes/page')
 
 const app = express();
 app.use(bodyParser.urlencoded({
     extended: false
 }));
 app.use(pino);
+app.use(express.static(
+    path.join(__dirname, 'public')
+))
 
 
 
@@ -16,6 +21,3 @@ app.listen(3001, () =>
 
 
 /////////////////////////////////////////////////
-
-const login = "Sebastian";
-const password = "Jadczak"

@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
+import { BrowserRouter as Router } from "react-router-dom";
+import Navigation from './Pages/Navigation'
+import Main from './Pages/Main'
+import Footer from './Pages/Footer'
+
 
 class App extends Component {
 
@@ -7,12 +12,22 @@ class App extends Component {
 
   render() {
 
+
     return (
       <div className="App">
-        <div className="login">
-          <label>Login</label> <input type="text" />
-          <label>Password</label><input type="password" /> <button>Zaloguj</button>
-        </div>
+        <Router>
+          <nav className="navigation">
+            <Navigation />
+          </nav>
+          <main>
+            <section className="main">
+              <Main />
+            </section>
+          </main>
+          <footer>
+            <Footer />
+          </footer>
+        </Router>
       </div>
     )
   }
