@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const pino = require('express-pino-logger')();
 const path = require('path');
-const PageServer = require('../routes/page')
+
 
 const app = express();
 app.use(bodyParser.urlencoded({
@@ -21,3 +21,12 @@ app.listen(3001, () =>
 
 
 /////////////////////////////////////////////////
+const login = "Sebastian";
+const password = "Jadczak";
+
+app.get('/login', (req, res) => {
+    res.json({
+        login,
+        password
+    })
+})
