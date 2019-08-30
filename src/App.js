@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './App.css';
+import './styles/App.css';
 import { BrowserRouter as Router } from "react-router-dom";
 import Navigation from './Pages/Navigation'
 import Main from './Pages/Main'
@@ -72,14 +72,19 @@ class App extends Component {
 
           <div className="login">
 
-            <p> Main </p>
-            <label >login</label>
-            <input type="text" onChange={this.handleChangeLogin} />
-            <label>Password</label>
-            <input type="password" onChange={this.handleChangePassword} />
+            <p className="Title"> Witaj na mojej stronie </p>
+            <div className="l">
+              <label className="Login">Login</label>
+              <input type="text" onChange={this.handleChangeLogin} />
+            </div>
+            <div className="p">
+              <label className="Password">Password</label>
+
+              <input type="password" onChange={this.handleChangePassword} />
+            </div>
             <button onClick={this.handleClickLogin}>Loguj</button>
 
-            {this.state.notCorrectLogin ? "Spróbuj jeszcze raz" : null}
+            {this.state.notCorrectLogin ? <p className="again">Spróbuj jeszcze raz</p> : null}
 
 
           </div>

@@ -1,0 +1,55 @@
+div.login {
+  position: absolute;
+  top: 25vh;
+  left: 30vw;
+}
+
+div.login p {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+div.login div.l {
+  margin-bottom: 10px;
+  font-size: 23px;
+  height: 55px;
+}
+
+div.login div.l label {
+
+
+  font-weight: bold;
+}
+
+div.login div.l input {
+  transform: translateY(-5px);
+  margin-left: 86px;
+  height: 30px;
+}
+
+
+/* //password  */
+
+div.login div.p {
+  font-size: 23px;
+  height: 55px;
+}
+
+div.login div.p label {
+  font-weight: bold;
+}
+
+div.login div.p input {
+  transform: translateY(-5px);
+  margin-left: 40px;
+  height: 30px;
+}
+
+/* button in div.login */
+div.login button {
+  width: 75px;
+  height: 35px;
+  font-size: 20px;
+  margin-left: 235px;
+}
