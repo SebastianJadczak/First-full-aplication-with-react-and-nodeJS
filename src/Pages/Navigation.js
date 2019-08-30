@@ -3,7 +3,7 @@ import React, { Component } from "react"
 class Navigation extends Component {
     render() {
         return (
-            <p>Witaj</p>
+            <button onClick={this.props.handleLogOut}>Wyloguj</button>
         )
     }
 }
