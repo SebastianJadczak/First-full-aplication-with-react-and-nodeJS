@@ -1,7 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  /* background-color: rgb(142, 172, 255);
+  color: white; */
+}
+
+div.App {
+  background-color: rgb(142, 172, 255);
+  /* color: white; */
+}
+
 div.login {
   position: absolute;
   top: 25vh;
   left: 30vw;
+
 }
 
 div.login p {
@@ -26,6 +41,8 @@ div.login div.l input {
   transform: translateY(-5px);
   margin-left: 86px;
   height: 30px;
+  background-color: white;
+  color: black;
 }
 
 
@@ -44,6 +61,8 @@ div.login div.p input {
   transform: translateY(-5px);
   margin-left: 40px;
   height: 30px;
+  background-color: white;
+  color: black;
 }
 
 /* button in div.login */
@@ -52,4 +71,19 @@ div.login button {
   height: 35px;
   font-size: 20px;
   margin-left: 235px;
+}
+
+p.again {
+  margin-top: 15px;
+}
+
+/* Main */
+
+main {
+  display: flex;
+}
+
+.App main nav.leftNav {
+  width: 20%;
+  background-color: rgb(255, 255, 255);
 }

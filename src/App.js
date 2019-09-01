@@ -3,7 +3,8 @@ import './styles/App.css';
 import { BrowserRouter as Router } from "react-router-dom";
 import Navigation from './Pages/Navigation'
 import Main from './Pages/Main'
-import Footer from './Pages/Footer'
+import Footer from './Pages/Footer';
+import LeftNav from './Pages/LeftNav'
 
 
 class App extends Component {
@@ -65,7 +66,7 @@ class App extends Component {
 
 
     return (
-      <div className="App">
+      <div className="App" >
 
 
         {this.state.correctLogin === null ?
@@ -97,6 +98,9 @@ class App extends Component {
               <Navigation handleLogOut={this.handleLogOut} />
             </nav>
             <main>
+              <nav className="leftNav">
+                <LeftNav />
+              </nav>
               <section className="main">
                 <Main />
               </section>
