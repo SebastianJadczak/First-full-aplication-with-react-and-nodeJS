@@ -13,7 +13,7 @@ class Navigation extends Component {
     render() {
 
         const menu = list.map(item => (
-            <NavLink id={item.id} to={item.path}>{item.title}</NavLink>
+            <NavLink key={item.id} to={item.path}>{item.title}</NavLink>
         ))
 
         return (

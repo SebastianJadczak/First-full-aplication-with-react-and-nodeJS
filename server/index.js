@@ -2,7 +2,9 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const pino = require('express-pino-logger')();
 const path = require('path');
-
+var cookieSession = require('cookie-session')
+var config = require('./config')
+const person = require('../src/JSON/person')
 
 const app = express();
 app.use(bodyParser.urlencoded({
@@ -13,7 +15,11 @@ app.use(express.static(
     path.join(__dirname, 'public')
 ))
 
-
+app.use(cookieSession({
+    name: 'session',
+    keys: config.keySession,
+    maxAge: config.maxAgeSession
+}))
 
 app.listen(3001, () =>
     console.log('Express server is running on localhost:3001')
@@ -28,5 +34,16 @@ app.get('/login', (req, res) => {
     res.json({
         login,
         password
+    })
+})
+
+
+//////////////////////////////////////////////
+
+app.get('/myprofil1', (req, res) => {
+    res.json({
+        name: person.name,
+        surname: person.surname,
+        adress: personalbar.adress
     })
 })

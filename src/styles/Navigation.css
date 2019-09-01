@@ -1,9 +1,11 @@
 div.nav {
     width: 100%;
-    height: 5vh;
+    height: 5.5vh;
     line-height: 5vh;
     text-align: right;
+    border-bottom: 2px solid rgb(241, 241, 241);
 }
+
 
 div.nav a {
     display: inline-block;
@@ -12,9 +14,15 @@ div.nav a {
     text-align: center;
     border: 1px solid white;
     margin-right: 5px;
+    color: white;
 }
 
 div.nav button {
     width: 100px;
     height: 5vh;
+    border: 2px solid white;
+    background-color: rgb(142, 172, 255);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
 }
