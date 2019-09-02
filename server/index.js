@@ -5,6 +5,7 @@ const path = require('path');
 var cookieSession = require('cookie-session')
 var config = require('./config')
 const person = require('../src/JSON/person')
+let MyArray = require('../src/JSON/MyArray')
 
 const app = express();
 app.use(bodyParser.urlencoded({
@@ -44,6 +45,14 @@ app.get('/myprofil1', (req, res) => {
     res.json({
         name: person.name,
         surname: person.surname,
-        adress: personalbar.adress
+        adress: person.adress
+    })
+})
+
+
+
+app.get('/myprofil2', (req, res) => {
+    res.json({
+        text: MyArray
     })
 })
