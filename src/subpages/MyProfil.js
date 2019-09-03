@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import "../styles/MyProfil.css"
-import MyArray from "./MyArray"
 
 class MyProfil extends Component {
 
@@ -35,7 +34,7 @@ class MyProfil extends Component {
         this.handleProfil()
     }
     render() {
-       
+
         return (
             <>
                 <div className="ProfilUser">
@@ -43,9 +42,7 @@ class MyProfil extends Component {
                     <p className="surname">Nazwisko: {this.state.surname}</p>
                     <p className="adress">Adres: {this.state.adress}</p>
                 </div>
-                <div className="MyArray">
-                    <MyArray />
-                </div>
+
             </>
         )
     }

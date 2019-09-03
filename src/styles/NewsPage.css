@@ -1,5 +1,5 @@
 div.newsBox {
-    width: 85vw;
+    width: 80vw;
     text-align: center;
 
 }
@@ -7,7 +7,7 @@ div.newsBox {
 div.newsBox p.titleNewsBox {
     margin-top: 20px;
     font-size: 25px;
-
+    font-weight: bold;
 }
 
 div.news {
@@ -20,7 +20,7 @@ div.news {
     box-shadow: 1px 1px 10px white;
 }
 
-div.news h2 {
+div.news h3 {
     margin-top: 10px;
     margin-bottom: 10px;
 }

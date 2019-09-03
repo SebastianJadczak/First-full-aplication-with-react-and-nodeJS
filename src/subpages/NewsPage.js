@@ -5,7 +5,7 @@ import "../styles/NewsPage.css"
 const NewsPage = () => {
     const news = NewsJSON.map(item => (
         <div className="news" key={item.id}>
-            <h2>{item.title}</h2>
+            <h3>{item.title}</h3>
             <p>{item.content}</p>
         </div>
     ))
