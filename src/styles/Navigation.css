@@ -15,6 +15,7 @@ div.nav a {
     border: 1px solid white;
     margin-right: 5px;
     color: white;
+    box-shadow: 1px 1px 7px white;
 }
 
 div.nav button {
@@ -25,4 +26,5 @@ div.nav button {
     color: white;
     font-weight: bold;
     font-size: 18px;
+    box-shadow: 1px 1px 7px white;
 }
