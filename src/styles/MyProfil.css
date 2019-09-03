@@ -1,8 +1,27 @@
-div.ProfilUser {
+div.PageProfil {
+    display: flex;
+}
 
-    position: relative;
+div.ProfilUser {
+    margin: 25px 150px;
     border: 2px solid white;
-    top: 50px;
-    left: 50px;
     padding: 50px;
+    width: 300px;
+    box-shadow: 1px 1px 7px white;
+    background-color: rgb(155, 180, 252);
+}
+
+div.aboutMe {
+    padding: 30px 50px;
+    margin: 25px 50px 25px 100px;
+    border: 2px solid white;
+    width: 400px;
+    box-shadow: 1px 1px 7px white;
+    background-color: rgb(155, 180, 252);
+}
+
+div.aboutMe p.about {
+    margin-bottom: 9px;
+    font-weight: bold;
+    letter-spacing: 0.7px;
 }

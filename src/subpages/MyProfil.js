@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import "../styles/MyProfil.css"
 
+
 class MyProfil extends Component {
 
     state = {
         name: "",
         surname: "",
-        adress: ""
+        adress: "",
+        title: "",
+        content: ""
     }
 
     handleProfil = () => {
@@ -23,27 +26,35 @@ class MyProfil extends Component {
         this.setState({
             name: data.name,
             surname: data.surname,
-            adress: data.adress
+            adress: data.adress,
+            title: data.title,
+            content: data.content
         })
     }
 
+
     componentDidMount() {
         this.handleProfil()
+
     }
     componentWillUnmount() {
         this.handleProfil()
+
     }
     render() {
 
         return (
-            <>
+            <div className="PageProfil">
                 <div className="ProfilUser">
                     <p className="name">Imię: {this.state.name}</p>
                     <p className="surname">Nazwisko: {this.state.surname}</p>
                     <p className="adress">Adres: {this.state.adress}</p>
                 </div>
-
-            </>
+                <div className="aboutMe">
+                    <p className="about">{this.state.title}</p>
+                    <p className="content">{this.state.content}</p>
+                </div>
+            </div>
         )
     }
 }
