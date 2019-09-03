@@ -1,0 +1,23 @@
+div.newsBox {
+    width: 85vw;
+    text-align: center;
+
+}
+
+div.newsBox p.titleNewsBox {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+div.news {
+    border: 1px solid white;
+    width: 70vw;
+    height: 15vh;
+    padding: 15px;
+    margin: 40px auto;
+}
+
+div.news h2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}

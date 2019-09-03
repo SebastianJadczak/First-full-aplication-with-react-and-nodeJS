@@ -35,7 +35,7 @@ class MyProfil extends Component {
         this.handleProfil()
     }
     render() {
-        // this.handleProfil()
+       
         return (
             <>
                 <div className="ProfilUser">

@@ -6,6 +6,7 @@ var cookieSession = require('cookie-session')
 var config = require('./config')
 const person = require('../src/JSON/person')
 let MyArray = require('../src/JSON/MyArray')
+let Board = require("../src/JSON/Board.json")
 
 const app = express();
 app.use(bodyParser.urlencoded({
@@ -54,5 +55,12 @@ app.get('/myprofil1', (req, res) => {
 app.get('/myprofil2', (req, res) => {
     res.json({
         text: MyArray
+    })
+})
+
+
+app.get('/board1', (req, res) => {
+    res.json({
+        xx: Board
     })
 })

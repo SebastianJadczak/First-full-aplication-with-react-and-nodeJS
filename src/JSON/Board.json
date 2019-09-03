@@ -1,0 +1,11 @@
+[{
+        "id": 1,
+        "name": "Ogłoszenie1",
+        "path": "/firstAd"
+    },
+    {
+        "id": 2,
+        "name": "Ogłoszenie2",
+        "path": "/firstAd"
+    }
+]
