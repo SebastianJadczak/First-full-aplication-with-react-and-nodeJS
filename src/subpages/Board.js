@@ -23,7 +23,7 @@ class Board extends Component {
     render() {
 
         const elements = boardListJSON.map(item => (
-            <li><NavLink key={item.id} to={item.path}>{item.name}</NavLink></li>
+            <li key={item.id}><NavLink to={item.path}>{item.name}</NavLink></li>
         ))
         return (
             <>

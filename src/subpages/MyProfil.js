@@ -18,11 +18,12 @@ class MyProfil extends Component {
         })
             .then(r => r.json())
             .then(data => {
-                this.showPersonDetails(data)
+                this.handleMyProfil(data)
+
             });
 
     }
-    showPersonDetails = (data) => {
+    handleMyProfil = (data) => {
         this.setState({
             name: data.name,
             surname: data.surname,
