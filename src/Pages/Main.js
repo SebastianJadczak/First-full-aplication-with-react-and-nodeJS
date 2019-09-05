@@ -7,6 +7,7 @@ import ErrorPage from "../subpages/ErrorPage";
 import MyProfil from "../subpages/MyProfil";
 import Board from "../subpages/Board";
 import Ad from "../subpages/Ad"
+import Programming from "../subpages/Programming"
 
 class Main extends Component {
 
@@ -19,6 +20,7 @@ class Main extends Component {
                 <Route path="/myprofil" component={MyProfil} />
                 <Route path="/board" component={Board} />
                 <Route path="/ad" component={Ad} />
+                <Route path="/programming" component={Programming} />
                 <Route component={ErrorPage} />
             </Switch>
         )

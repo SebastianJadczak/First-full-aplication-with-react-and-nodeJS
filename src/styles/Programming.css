@@ -1,0 +1,47 @@
+div.SubPageProgramming {
+
+    width: 75vw;
+}
+
+
+div.regulations {
+    position: absolute;
+    top: 100px;
+    height: 80vh;
+    width: 70vw;
+    border: 1px solid white;
+    border-radius: 10px;
+    box-shadow: 1px 1px 7px white;
+    background-color: rgb(155, 180, 252);
+    margin-left: 80px;
+}
+
+div.regulations h3 {
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+    margin: 50px auto 60px;
+    letter-spacing: 1.9px;
+}
+
+div.regulations p {
+    margin: auto 70px;
+    font-size: 20px;
+    letter-spacing: 1.8px;
+    line-height: 36px;
+}
+
+div.regulations button.regulations {
+    position: relative;
+    top: 45px;
+    left: 350px;
+    border: 1px solid white;
+    box-shadow: 1px 1px 7px white;
+    background-color: rgb(138, 165, 248);
+    margin-left: 80px;
+    width: 120px;
+    height: 70px;
+    border-radius: 11px;
+    font-size: 20px;
+    color: white;
+}
