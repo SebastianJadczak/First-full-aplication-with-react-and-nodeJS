@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Reg from "../JSON/Regulations.json"
 import "../styles/Programming.css"
 import ProgrammingReg from "./ProgrammingReg"
+import WriteTopic from "./WriteTopic"
+import TopicList from "./TopicList"
 
 class Programming extends Component {
 
@@ -27,6 +29,12 @@ class Programming extends Component {
                 {regulations ? null :
                     <div className="programming">
                         <h2>Grupa dyskusyjna "Programowanie"</h2>
+                        <div className="writeTopic">
+                            <WriteTopic />
+                        </div>
+                        <div className="TopicList">
+                            <TopicList />
+                        </div>
                     </div>}
             </div>
         )
