@@ -8,7 +8,7 @@ import MyProfil from "../subpages/MyProfil";
 import Board from "../subpages/Board";
 import Ad from "../subpages/Ad"
 import Programming from "../subpages/Programming"
-import TopicFirst from "../subpages/Topic"
+
 
 class Main extends Component {
 
@@ -22,7 +22,6 @@ class Main extends Component {
                 <Route path="/board" component={Board} />
                 <Route path="/ad" component={Ad} />
                 <Route path="/programming" component={Programming} />
-                <Route path="/TopicFirst" component={TopicFirst} />
                 <Route component={ErrorPage} />
             </Switch>
         )

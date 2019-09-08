@@ -1,29 +1,40 @@
 import React, { Component } from "react"
 import TopicsJSON from "../JSON/Topics.json"
-import { NavLink } from 'react-router-dom'
 import "../styles/TopicList.css"
 import Topic from './Topic'
+import TopicDetail from "./TopicDetail"
 
 
 class TopicList extends Component {
 
+    state = {
+        topicDetail: false,
+        title: "",
+        content: ""
+    }
+
+    handlebuttonTopic = (title, content) => {
+        this.setState({
+            topicDetail: true,
+            title: title,
+            content: content
+        })
+
+    }
 
 
     render() {
-        // const elements = TopicsJSON.map(item => (
-        //     <li key={item.id}><NavLink to={item.path}>{item.title}</NavLink></li>
-        // ))
 
-
-        const elements1 = TopicsJSON.map(item => (
-            <li key={item.id} className="Topic"><NavLink to={item.path}><Topic Title={item.title} Content={item.content} /></NavLink></li>
+        const elements = TopicsJSON.map(item => (
+            <li key={item.id} className="Topic"><Topic Title={item.title} Content={item.content} handlebuttonTopic={this.handlebuttonTopic} /></li>
         ))
         return (
-
-            <ul>
-                {/* {elements} */}
-                {elements1}
-            </ul>
+            <>
+                <ul>
+                    {elements}
+                </ul>
+                {this.state.topicDetail ? <TopicDetail title={this.state.title} content={this.state.content} /> : null}
+            </>
         )
     }
 }
