@@ -1,8 +1,7 @@
 import React, { Component } from "react"
-import Topic from './Topic'
 import TopicsJSON from "../JSON/Topics.json"
-
-
+import { NavLink } from 'react-router-dom'
+import "../styles/TopicList.css"
 
 
 class TopicList extends Component {
@@ -10,10 +9,14 @@ class TopicList extends Component {
 
 
     render() {
-
+        const elements = TopicsJSON.map(item => (
+            <li key={item.id}><NavLink to={item.path}>{item.title}</NavLink></li>
+        ))
         return (
 
-            <p>zz</p>
+            <ul>
+                {elements}
+            </ul>
         )
     }
 }

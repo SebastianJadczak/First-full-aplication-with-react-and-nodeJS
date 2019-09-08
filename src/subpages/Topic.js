@@ -1,8 +1,15 @@
 import React from 'react';
+import Topics from "../JSON/Topics.json"
 
-const Topic = (props) => {
+const Topic = () => {
+
+    const tt = Topics.find(item => item.id === 1)
+
     return (
-        <p>{props.title}</p>
+        <>
+            <p className="TopicTitle">{tt.title}</p>
+            <p className="TopicContent">{tt.content}</p>
+        </>
     )
 }
 export default Topic;

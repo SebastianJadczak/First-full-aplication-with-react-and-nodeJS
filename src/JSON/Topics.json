@@ -1,9 +1,11 @@
 [{
     "id": 1,
     "title": "Tytuł Topica",
-    "content": "To jest przykładowa treść pierwszego topica. Oczywiście może być dłuższa, wszystko zależy od użytkownika"
+    "content": "To jest przykładowa treść pierwszego topica. Oczywiście może być dłuższa, wszystko zależy od użytkownika",
+    "path": "/TopicFirst"
 }, {
     "id": 2,
     "title": "Tytuł Topica",
-    "content": "To jest przykładowa treść pierwszego topica. Oczywiście może być dłuższa, wszystko zależy od użytkownika"
+    "content": "To jest przykładowa treść pierwszego topica. Oczywiście może być dłuższa, wszystko zależy od użytkownika",
+    "path": "/TopicSecond"
 }]
