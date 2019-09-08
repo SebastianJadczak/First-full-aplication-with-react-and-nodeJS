@@ -1,0 +1,45 @@
+li.Topic {
+    width: 80%;
+    height: 130px;
+    margin-left: 200px;
+    list-style: none;
+    border: 1px solid white;
+    box-shadow: 1px 1px 7px white;
+    margin-bottom: 20px;
+}
+
+li.Topic:nth-of-type(1) {
+    margin-top: 80px;
+}
+
+li.Topic a {
+    color: white;
+    text-decoration: none;
+}
+
+li.Topic p.TopicTitle {
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 5px 5px;
+}
+
+li.Topic p.TopicContent {
+    padding-left: 15px;
+    padding-top: 10px;
+}
+
+li.Topic div.More {
+    margin: 20px 30px 0 0;
+    text-align: right;
+}
+
+li.Topic button.buttonTopic {
+    width: 85px;
+    height: 35px;
+    background-color: rgb(155, 180, 252);
+    border: 1px solid white;
+    box-shadow: 1px 1px 7px white;
+    font-weight: bold;
+    color: white;
+}
