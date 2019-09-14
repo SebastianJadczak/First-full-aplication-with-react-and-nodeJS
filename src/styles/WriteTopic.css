@@ -1,0 +1,26 @@
+textarea.NewTopic {
+    width: 650px;
+    height: 80px;
+    margin-left: 170px;
+    margin-bottom: 10px;
+    font-size: 19px;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: 1px 1px 3px white;
+}
+
+div.buttonNewTopic {
+    text-align: right;
+    margin-right: 130px;
+}
+
+button.addNewTopic {
+    border: 1px solid white;
+    box-shadow: 1px 1px 7px white;
+    background-color: rgb(138, 165, 248);
+    color: white;
+    width: 100px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 5px;
+}

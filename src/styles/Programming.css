@@ -22,6 +22,7 @@ div.regulations h3 {
     text-align: center;
     margin: 50px auto 60px;
     letter-spacing: 1.9px;
+
 }
 
 div.regulations p {
@@ -44,4 +45,14 @@ div.regulations button.regulations {
     border-radius: 11px;
     font-size: 20px;
     color: white;
+}
+
+div.programming h2 {
+    text-align: center;
+    margin: 2vh 0 4vh 12vw;
+
+}
+
+div.writeTopic {
+    text-align: center;
 }
