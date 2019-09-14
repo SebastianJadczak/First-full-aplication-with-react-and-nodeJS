@@ -39,7 +39,7 @@ class MyProfil extends Component {
 
     }
     componentWillUnmount() {
-        this.handleProfil()
+
 
     }
     render() {

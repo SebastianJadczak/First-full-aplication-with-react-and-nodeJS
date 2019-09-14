@@ -21,7 +21,11 @@ class TopicList extends Component {
         })
 
     }
-
+    handleCloseTopicDetail = () => {
+        this.setState({
+            topicDetail: false,
+        })
+    }
 
     render() {
 
@@ -33,7 +37,7 @@ class TopicList extends Component {
                 <ul>
                     {elements}
                 </ul>
-                {this.state.topicDetail ? <TopicDetail title={this.state.title} content={this.state.content} /> : null}
+                {this.state.topicDetail ? <TopicDetail title={this.state.title} content={this.state.content} close={this.handleCloseTopicDetail} /> : null}
             </>
         )
     }

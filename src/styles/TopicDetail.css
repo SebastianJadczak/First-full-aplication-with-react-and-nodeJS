@@ -1,0 +1,30 @@
+div.TopicDetail {
+    position: fixed;
+    width: 80vw;
+    height: 80vh;
+    border: 1px solid white;
+    box-shadow: 1px 1px 7px white;
+    color: rgb(32, 32, 32);
+    background-color: rgb(155, 180, 252);
+    top: 110px;
+    left: 16vw;
+}
+
+div.TopicDetail div.x {
+    position: relative;
+    text-align: right;
+    top: -10px;
+    right: -13px;
+}
+
+div.TopicDetail div.x span {
+    font-size: 25px;
+    font-weight: bold;
+    border: 2px solid rgb(32, 32, 32);
+    border-radius: 18px;
+    box-shadow: 1px 1px 7px white;
+    color: rgb(32, 32, 32);
+    padding: 2px 7px;
+    cursor: pointer;
+    background-color: rgb(240, 244, 255);
+}
